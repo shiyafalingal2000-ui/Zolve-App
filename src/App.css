@@ -1,0 +1,272 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.phone {
+  width: 390px;
+  min-height: 844px;
+  background: white;
+  border-radius: 40px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 80px;
+  overflow-y: auto;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  font-size: 42px;
+  font-weight: 800;
+  color: #6c63ff;
+  letter-spacing: -1px;
+}
+
+.tagline {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s;
+  resize: none;
+}
+
+.input:focus {
+  border-color: #6c63ff;
+}
+
+.primary {
+  width: 100%;
+  padding: 14px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.primary:hover {
+  background: #5a52d5;
+}
+
+.secondary {
+  width: 100%;
+  padding: 14px;
+  background: #fff;
+  color: #6c63ff;
+  border: 2px solid #6c63ff;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.link {
+  color: #6c63ff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+}
+
+.task-card {
+  background: #f8f7ff;
+  border-radius: 16px;
+  padding: 16px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s;
+}
+
+.task-card:hover {
+  border-color: #6c63ff;
+}
+
+.task-card h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.task-card p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.badge.open {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge.accepted {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.header h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.back {
+  background: none;
+  border: none;
+  color: #6c63ff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+}
+
+.detail-card {
+  background: #f8f7ff;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-card h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.detail-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.profile-card {
+  background: #f8f7ff;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.avatar {
+  font-size: 48px;
+  background: #ede9ff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  padding: 40px 0;
+}
+
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: white;
+  border-top: 1px solid #eee;
+  padding: 12px 0;
+}
+
+.bottom-nav button {
+  flex: 1;
+  background: none;
+  border: none;
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.bottom-nav button:hover {
+  color: #6c63ff;
+}
