@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
-const API = "http://127.0.0.1:8002";
+const API = "https://zolve-backend.onrender.com";
 
 export default function App() {
   const [screen, setScreen] = useState("login");
